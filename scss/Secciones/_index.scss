@@ -1,19 +1,23 @@
+.bodyBG {
+    @include bodyContainer();
+}
+
 header {
     .navbar {
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.4);
     }
     
     .navbar-custom {
-        background-color: #548CA8;
+        background-color: $azul;
     }
     
     .navbar-light .navbar-nav .nav-link {
-        color: #EEEEEE;
+        color: $blanco;
         font-weight: 450;
         padding-bottom: auto;
         padding-top: auto;
         &:hover {
-            color: #334257;
+            color: $azul_oscuro;
             text-shadow: 1.5px 1px #476072;
         }
     }
@@ -29,23 +33,31 @@ main {
             justify-content: center;
         }
         div {
-            h2 {
+            .textoHome {
                 padding-left: 15vh;
                 padding-right: 15vh;
                 font-weight: bold;
-                color: #334257;
+                color: $azul_oscuro;
                 margin: 0 auto;
             }
         }
     }
 
+    h2 {
+        @extend %generalTitulos;
+    }
+
+    p {
+        @extend %generalParrafos;
+    }
+
     .nosotrosBG {
-        background-color: #334257;
+        background-color: $azul_oscuro;
         .nosotrosSection {  
             display: flex;
             align-items: center;
             justify-content: center;
-            color:#EEEEEE;
+            color:$blanco;
         }
         
         .nosotrosText {
@@ -55,21 +67,21 @@ main {
     }
 
     .iconosSection {
-        background-color: #334257;
+        background-color: $azul_oscuro;
         padding-top: 25px;
         padding-bottom: 25px;
         .parrafoIconos {
-            color:#EEEEEE;
+            color:$blanco;
         }
     }
 
     .serviciosBG {
-        background-color: #334257;
+        background-color: $azul_oscuro;
         .serviciosSection {
             display: flex;
             align-items: center;
             justify-content: center;
-            color:#EEEEEE;
+            color:$blanco;
         }
         
         .serviciosText {
@@ -80,7 +92,7 @@ main {
         .serviciosLista {
             padding: 35px 20px;
             text-align: center;
-            color: #EEEEEE;
+            color: $blanco;
             list-style: none;
             li {
                 padding: 2px 0px;
@@ -90,7 +102,7 @@ main {
     
 
     .logosBG {
-        background-color: #334257;
+        background-color: $azul_oscuro;
         .logoItem {
             padding-top: 25px;
             padding-bottom: 25px;
@@ -107,15 +119,15 @@ main {
 
 footer {
     .footerSection {
-        color: #EEEEEE;
-        background-color: #476072;
+        color: $blanco;
+        background-color: $azul_claro;
         .footerItems {
             padding-top: 35px;
             padding-bottom: 0px;
             .contactoLista {
                 padding: 35px 20px;
                 text-align: center;
-                color: #EEEEEE;
+                color: $blanco;
                 list-style: none;
             }
             .contactoLista > li {
@@ -124,7 +136,7 @@ footer {
             .redesLista {
                 padding: 35px 20px;
                 text-align: center;
-                color: #EEEEEE;
+                color: $blanco;
                 list-style: none;
             }
             .redesLista > li {
@@ -132,9 +144,9 @@ footer {
             } 
             .redesItem a {
                 text-decoration: none;
-                color: #EEEEEE;
+                color: $blanco;
                 &:hover {
-                    color: #334257;
+                    color: $azul_oscuro;
                     text-shadow: 1.5px 1px #476072;
                 }
             }
