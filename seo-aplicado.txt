@@ -5,3 +5,4 @@
 5. Agregue etiqueta meta para Contacto con las siguientes keyword: "desarrollo web, analisis de informacion, portal web, interface de usuario, plataforma web, Bootstrap, ventas, cotizaciones, solicitudes, contacto, informacion"
 6. Agregue etiqueta meta para Trabaja con Nosotros con las siguientes keyword: "desarrollo web, analisis de informacion, portal web, interface de usuario, plataforma web, desarrollador, trabajo, aplicacion, solicitud, vacantes, bootstrap"
 7. el Alt en las imagenes esta aplicado desde un inicio, entrega 1 del proyecto. 
+8. Agregue etiqueta meta con descripcion de la pagina.
